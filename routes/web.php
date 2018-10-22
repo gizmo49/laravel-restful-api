@@ -18,3 +18,6 @@ Route::post('/projects','ProjectsController@PostProject');
 Route::get('articles', 'ArticlesController@getArticles');
 
 Route::get('articles/{id}', 'ArticlesController@findArticles');
+Route::post('register', 'Auth\RegisterController@register');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout');
